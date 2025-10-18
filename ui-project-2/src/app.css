@@ -1,16 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark);
+
+  --blue: #3E66C2;
+  --blue-80: #6585CE;
+  --blue-50: #9FB3E1;
+  --blue-20: #D8E0F3;
+  --blue-10: #ECF0F9;
+
+  --light: #FFFFFF;
+  --light-80: #CCCCCC;
+  --light-50: #7F7F7F;
+  --light-20: #333333;
+  --light-10: #191919;
+
+  --dark: #000000;
+  --dark-80: #333333;
+  --dark-50: #808080;
+  --dark-20: #CCCCCC;
+  --dark-10: #E6E6E6;
 }
 
 body {
@@ -26,5 +40,64 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+a {
+  color: var(--blue);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: solid 1px var(--dark-20);
+  font-size: 16px;
+
+  &:focus-within {
+    outline-color: var(--blue);
+  }
+}
+
+input[type="checkbox"] {
+  accent-color: var(--dark-50);
+}
+
+button {
+  /* TODO: I don't feel like this is the right way to do this, but it works for now so I am leaving it */
+  border-radius: 50vh;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 3px solid;
+
+  &.primary {
+    background-color: var(--blue);
+    color: var(--light);
+    border-color: var(--blue);
+
+    &:hover {
+      background-color: var(--blue-80);
+      border-color: var(--blue-80);
+    }
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: var(--blue);
+    border-color: var(--blue);
+  }
 }

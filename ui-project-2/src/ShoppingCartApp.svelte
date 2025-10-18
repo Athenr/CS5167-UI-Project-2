@@ -1,23 +1,22 @@
 <script>
-
+  import LoginPage from "./screens/LoginPage.svelte";
+    import PaymentPage from "./screens/PaymentPage.svelte";
+  import ShoppingPage from "./screens/ShoppingPage.svelte";
 </script>
 
 <main>
-<div class="main-application-background">
-    <h1>Shopping Cart Application example</h1>
-</div>
+  <div class="main-application-background">
+    <LoginPage />
+    <!-- <ShoppingPage /> -->
+     <!-- <PaymentPage/> -->
+  </div>
 </main>
 
 <style>
- .main-application-background {
-    background-color: #f0f0f0;
-    text-align: center;
-    font-family: Arial, sans-serif;
+  .main-application-background {
     width: 1000px;
     height: 750px;
- }
-  
-  h1 {
-    color: #333;
+    position: relative;
+    background-color: var(--light);
   }
 </style>
