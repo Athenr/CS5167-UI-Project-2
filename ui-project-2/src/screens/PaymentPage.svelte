@@ -3,7 +3,7 @@
 
     import Contactless from "../icons/contactless.svg?raw";
 
-    const items = [
+    let items = $state([
         {
             id: 0,
             name: "Bananas",
@@ -25,7 +25,27 @@
             price: 12.45,
             img: "https://i5.walmartimages.com/seo/Dave-s-Killer-Bread-21-Whole-Grains-and-Seeds-Organic-Bread-Loaf-27-oz-Pack-of-9_6c9b0609-3ce6-430a-880e-52d61186e31a.d289021d7c6c7545679f2a1498c52985.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
         },
-    ];
+    ]);
+
+    function removeItem(toRemoveID){
+        
+        items = items.filter(item => item.id !== toRemoveID);
+        
+    }
+
+    function addItem(name, quantity, price ){
+        const newItem = {
+            id: items.length,
+            name: name,
+            quantity: quantity,
+            price: price,
+            img: "N/A"
+        }
+        items.push(newItem);
+    }
+    let name = $state("Item Name");
+    let quantity = $state(0);
+    let price = $state(0);
 </script>
 
 <div class="container">
@@ -36,7 +56,9 @@
         </div>
         <div class="items">
             {#each items as item}
+            
                 <div class="item">
+                    <button onclick={() => removeItem(item.id)}>X</button>
                     <div class="quantity">{item.quantity}x</div>
                     <div class="name">{item.name}</div>
                     <div class="price number">
@@ -44,6 +66,12 @@
                     </div>
                 </div>
             {/each}
+
+        </div>
+        <div>
+                    <input bind:value={name} /><br>Number of Items <input bind:value={quantity}><br>Price Per Item <input type=number bind:value={price}>
+                    <br>
+            <button onclick={() => addItem(name,quantity,price)}>Add Item</button>
         </div>
         <div class="total">
             <div>
@@ -92,15 +120,24 @@
         align-self: stretch;
     }
 
+    .receipt {
+
+        background-color: var(--light);
+        color: var(--blue);
+    }
     .payment {
         background-color: var(--blue);
         color: var(--light);
     }
 
     .header {
+        background-color: var(--blue);
+        color: var(--light);
+        text-align: center;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        border-radius: 30px;
     }
 
     .total {
