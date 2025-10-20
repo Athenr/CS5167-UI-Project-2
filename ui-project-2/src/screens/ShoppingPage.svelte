@@ -1,4 +1,6 @@
 <script>
+    import StoreMap from "../map/StoreMap.svelte";
+
     const items = [
         {
             id: 0,
@@ -25,7 +27,9 @@
 </script>
 
 <div class="container">
-    <div class="pane map"></div>
+    <div class="pane map">
+        <StoreMap class="store-map" />
+    </div>
     <div class="pane list">
         <input
             type="search"
@@ -73,6 +77,9 @@
 
     .map {
         background-color: var(--dark-20);
+        width: 50%;
+
+        padding: 0;
     }
 
     .list {

@@ -121,9 +121,8 @@
     }
 
     .receipt {
-
         background-color: var(--light);
-        color: var(--blue);
+        color: var(--dark);
     }
     .payment {
         background-color: var(--blue);
@@ -131,13 +130,9 @@
     }
 
     .header {
-        background-color: var(--blue);
-        color: var(--light);
-        text-align: center;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        border-radius: 30px;
     }
 
     .total {

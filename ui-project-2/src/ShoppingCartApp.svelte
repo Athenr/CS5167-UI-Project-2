@@ -1,14 +1,16 @@
 <script>
   import LoginPage from "./screens/LoginPage.svelte";
-    import PaymentPage from "./screens/PaymentPage.svelte";
+  import PaymentPage from "./screens/PaymentPage.svelte";
   import ShoppingPage from "./screens/ShoppingPage.svelte";
+  import StoreMap from "./map/StoreMap.svelte";
 </script>
 
 <main>
+  <!-- <StoreMap /> -->
   <div class="main-application-background">
-    <LoginPage />
-    <!-- <ShoppingPage /> -->
-     <!-- <PaymentPage/> -->
+    <!-- <LoginPage /> -->
+    <ShoppingPage />
+    <!-- <PaymentPage/> -->
   </div>
 </main>
 
