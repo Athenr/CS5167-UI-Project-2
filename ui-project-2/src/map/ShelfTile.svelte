@@ -10,13 +10,13 @@
 
 <style>
     .tile {
-        width: 300px;
-        height: 200px;
+        width: 150px;
+        height: 100px;
 
         display: flex;
         flex-direction: row;
 
-        background-color: var(--dark-10);
+        background-color: var(--dark-20);
     }
 
     .shelf {

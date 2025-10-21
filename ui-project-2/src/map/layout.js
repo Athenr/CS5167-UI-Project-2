@@ -15,27 +15,36 @@ export const layout = [
             "tileId": 1,
             "shelves": [0],
             "active": {
-                "north": true,
                 "east": true,
-                "south": true,
-                "west": true,
-                "location": true
+                "south": true
             }
         },
         {
             "type": "path",
             "tileId": 2,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "east": true,
+                "west": true
+            }
         },
         {
             "type": "path",
             "tileId": 3,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "east": true,
+                "west": true
+            }
         },
         {
             "type": "path",
             "tileId": 4,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "south": true,
+                "west": true
+            }
         },
         {
             "type": "path",
@@ -50,22 +59,38 @@ export const layout = [
         {
             "type": "path",
             "tileId": 7,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "south": true,
+                "east": true
+            }
         },
         {
             "type": "path",
             "tileId": 8,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "east": true,
+                "west": true
+            }
         },
         {
             "type": "path",
             "tileId": 9,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "east": true,
+                "west": true
+            }
         },
         {
             "type": "path",
             "tileId": 10,
-            "shelves": [11]
+            "shelves": [11],
+            "active": {
+                "south": true,
+                "west": true
+            }
         },
         {
             "type": "shelf",
@@ -92,7 +117,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 13,
-            "shelves": [12, 14]
+            "shelves": [12, 14],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -116,7 +145,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 16,
-            "shelves": [16, 17]
+            "shelves": [16, 17],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -140,7 +173,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 19,
-            "shelves": [18, 20]
+            "shelves": [18, 20],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -164,7 +201,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 22,
-            "shelves": [21, 23]
+            "shelves": [21, 23],
+            "active": {
+                "south": true,
+                "north": true
+            }
         },
         {
             "type": "shelf",
@@ -190,7 +231,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 25,
-            "shelves": [24, 26]
+            "shelves": [24, 26],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -214,7 +259,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 28,
-            "shelves": [27, 29]
+            "shelves": [27, 29],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -238,7 +287,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 31,
-            "shelves": [30, 32]
+            "shelves": [30, 32],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -262,7 +315,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 34,
-            "shelves": [33, 35]
+            "shelves": [33, 35],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -288,7 +345,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 37,
-            "shelves": [36, 38]
+            "shelves": [36, 38],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -312,7 +373,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 40,
-            "shelves": [39, 41]
+            "shelves": [39, 41],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -336,7 +401,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 43,
-            "shelves": [42, 44]
+            "shelves": [42, 44],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -360,7 +429,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 46,
-            "shelves": [45, 47]
+            "shelves": [45, 47],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -386,7 +459,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 49,
-            "shelves": [48, 50]
+            "shelves": [48, 50],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -410,7 +487,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 52,
-            "shelves": [51, 53]
+            "shelves": [51, 53],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -434,7 +515,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 55,
-            "shelves": [54, 56]
+            "shelves": [54, 56],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -458,7 +543,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 58,
-            "shelves": [57, 59]
+            "shelves": [57, 59],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -484,7 +573,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 61,
-            "shelves": [60, 62]
+            "shelves": [60, 62],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -508,7 +601,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 64,
-            "shelves": [63, 65]
+            "shelves": [63, 65],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -532,7 +629,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 67,
-            "shelves": [66, 68]
+            "shelves": [66, 68],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -556,7 +657,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 70,
-            "shelves": [69, 71]
+            "shelves": [69, 71],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -582,7 +687,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 73,
-            "shelves": [72, 74]
+            "shelves": [72, 74],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -606,7 +715,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 76,
-            "shelves": [75, 77]
+            "shelves": [75, 77],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -630,7 +743,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 79,
-            "shelves": [78, 80]
+            "shelves": [78, 80],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -654,7 +771,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 82,
-            "shelves": [81, 83]
+            "shelves": [81, 83],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -680,7 +801,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 85,
-            "shelves": [84, 86]
+            "shelves": [84, 86],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -704,7 +829,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 88,
-            "shelves": [87, 89]
+            "shelves": [87, 89],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -728,7 +857,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 91,
-            "shelves": [90, 92]
+            "shelves": [90, 92],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -752,7 +885,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 94,
-            "shelves": [93, 95]
+            "shelves": [93, 95],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -778,7 +915,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 97,
-            "shelves": [96, 98]
+            "shelves": [96, 98],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -802,7 +943,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 100,
-            "shelves": [99, 101]
+            "shelves": [99, 101],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -826,7 +971,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 103,
-            "shelves": [102, 104]
+            "shelves": [102, 104],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -850,7 +999,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 106,
-            "shelves": [105, 107]
+            "shelves": [105, 107],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -876,7 +1029,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 109,
-            "shelves": [108, 110]
+            "shelves": [108, 110],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -900,7 +1057,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 112,
-            "shelves": [111, 113]
+            "shelves": [111, 113],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -924,7 +1085,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 115,
-            "shelves": [114, 116]
+            "shelves": [114, 116],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -948,7 +1113,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 118,
-            "shelves": [117, 119]
+            "shelves": [117, 119],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -974,7 +1143,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 121,
-            "shelves": [120]
+            "shelves": [120],
+            "active": {
+                "north": true,
+                "location": true
+            }
         },
         {
             "type": "path",
@@ -989,22 +1162,38 @@ export const layout = [
         {
             "type": "path",
             "tileId": 124,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "north": true,
+                "east": true
+            }
         },
         {
             "type": "path",
             "tileId": 125,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "east": true,
+                "west": true
+            }
         },
         {
             "type": "path",
             "tileId": 126,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "east": true,
+                "west": true
+            }
         },
         {
             "type": "path",
             "tileId": 127,
-            "shelves": []
+            "shelves": [],
+            "active": {
+                "west": true,
+                "north": true
+            }
         },
         {
             "type": "path",
@@ -1019,7 +1208,11 @@ export const layout = [
         {
             "type": "path",
             "tileId": 130,
-            "shelves": [131]
+            "shelves": [131],
+            "active": {
+                "north": true,
+                "south": true
+            }
         },
         {
             "type": "shelf",
@@ -1033,75 +1226,3 @@ export const layout = [
         }
     ]
 ]
-
-
-// NOTE: AI generated code below. Also it is now out of date... (no neighbor generating functionality)
-/**
-* Parses a multiline string representation of a store layout into a 2D array of tile objects.
-* 's' is parsed as a shelf tile, '#' is parsed as a path tile.
-*
-* @param {string} layoutString The string representation of the map.
-* @returns {Array<Array<Object>>} A 2D array (grid) of tile objects.
-*/
-function parseStoreLayout(layoutString) {
-    // Split the string by newlines, remove leading/trailing whitespace, and filter out empty lines
-    const rows = layoutString.trim().split('\n').filter(row => row.length > 0);
-
-    // Initialize the tile ID counter
-    let tileIdCounter = 0;
-    let itemIdCounter = 0;
-
-    // Map each row string to an array of tile objects
-    const layoutGrid = rows.map((row) => {
-        // Map each character in the row string to a tile object
-        const tileObjects = Array.from(row).map((char) => {
-            let tile;
-
-            // Determine the tile object structure based on the character
-            if (char === 's') {
-                tile = {
-                    type: "shelf",
-                    tileId: tileIdCounter,
-                    items: [itemIdCounter++, itemIdCounter++, itemIdCounter++] // Initialize the items array for shelves
-                };
-            } else if (char === '#') {
-                tile = {
-                    type: "path",
-                    tileId: tileIdCounter
-                };
-            } else {
-                // Handle unexpected characters
-                console.warn(`Unknown character '${char}' encountered. Defaulting to 'path'.`);
-                tile = {
-                    type: "path",
-                    tileId: tileIdCounter
-                };
-            }
-
-            // Increment the counter for the next tile
-            tileIdCounter++;
-            return tile;
-        });
-        return tileObjects;
-    });
-
-    return layoutGrid;
-}
-
-// ------------------------------------------------------------------
-// --- Usage Example ---
-// ------------------------------------------------------------------
-
-const layoutString = `
-s##########s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s#ss#ss#ss#s
-s##########s
-`;
