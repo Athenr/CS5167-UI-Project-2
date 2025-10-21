@@ -3,17 +3,17 @@
     import PaymentPage from "./screens/PaymentPage.svelte";
   import ShoppingPage from "./screens/ShoppingPage.svelte";
 
-  let activePage = $state(0)
+  let currentPage = $state(2)
 </script>
 
 <main>
   <div class="main-application-background">
-    {#if activePage = 0}
+    {#if currentPage == 0}
     <LoginPage />
-    {:else if activePage = 1}
+    {:else if currentPage == 1}
     <ShoppingPage />
-    {:else if activePage = 2}
-     <PaymentPage bind:activePage={activePage}/>
+    {:else if currentPage == 2}
+     <PaymentPage bind:activePage={currentPage}/>
      {:else}
      <LoginPage />
      {/if} 

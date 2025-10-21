@@ -104,7 +104,7 @@
             <a href="#">I only have cash</a>
             <br>
             <br>
-            <button onclick={ () => {activePage = 2}}>Cancel Transaction</button>
+            <button onclick={ () => {activePage = 0}}>Cancel Transaction</button>
         </div>
     </div>
 </div>
