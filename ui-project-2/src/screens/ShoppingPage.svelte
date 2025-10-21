@@ -24,6 +24,15 @@
             img: "https://i5.walmartimages.com/seo/Dave-s-Killer-Bread-21-Whole-Grains-and-Seeds-Organic-Bread-Loaf-27-oz-Pack-of-9_6c9b0609-3ce6-430a-880e-52d61186e31a.d289021d7c6c7545679f2a1498c52985.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
         },
     ];
+
+    const route = [
+        {
+            tileId: 121,
+            direction: {
+                // icon: 
+            }
+        }
+    ];
 </script>
 
 <div class="container">
@@ -31,12 +40,13 @@
         <StoreMap class="store-map" />
     </div>
     <div class="pane list">
-        <input
-            type="search"
-            name="search"
-            id="search"
-            placeholder="Search..."
-        />
+        <div class="header">
+            <h1 class="no-margin">Grocery List</h1>
+            <p class="no-margin">
+                Items will automatically be checked off your list below
+                when you add them to your cart.
+            </p>
+        </div>
         <div class="shopping-list">
             {#each items as item}
                 <div class="item">
@@ -73,6 +83,12 @@
         gap: 20px;
         flex: 1 0 0;
         align-self: stretch;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .map {

@@ -4,11 +4,12 @@
     import ShelfTile from "./ShelfTile.svelte";
 
     import Straight from "../icons/straight.svg?raw";
+    import TurnRight from "../icons/turn_right.svg?raw";
 
     const width = layout[0].length * 150;
     const height = layout.length * 100;
 
-    let { ...rest } = $props();
+    let { route = $bindable(), ...rest } = $props();
 
     let container;
 
@@ -47,13 +48,16 @@
 <div {...rest} class={["container", { ...rest.class }]} bind:this={container}>
     <div class="directions">
         <div class="icon">
-            {@html Straight}
-            <!-- <img
+            <!-- {@html Straight} -->
+            <img
                 src="https://i5.walmartimages.com/seo/Marketside-Fresh-Organic-Bananas-Bunch_f17ef225-0999-4035-9ed1-7a06607333b4.7c3b33492f937bcc19fe3339d5230929.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF"
                 alt="Bananas"
-            /> -->
+            />
         </div>
-        <div class="text">Continue straight</div>
+        <div class="text">
+            <div class="main">Grab 10 bananas</div>
+            <p class="no-margin">From the top shelf on the left</p>
+        </div>
     </div>
     <!-- TODO: Yes I know this is probably better done as an SVG. 
     This is easier, quicker, and also works though so I am leaving it for now. -->
@@ -159,7 +163,7 @@
 
     .directions {
         /* TODO: This should probably not be in px, but it works since this is for a specific screen size */
-        width: 460px;
+        width: 440px;
         height: 60px;
         /* TODO: This is also a little hacky */
         margin-top: 10px;
@@ -168,11 +172,10 @@
         position: fixed;
         background-color: var(--light);
 
-        font-weight: 600;
         color: var(--dark);
 
         display: flex;
-        padding: 10px;
+        padding: 10px 20px;
 
         gap: 20px;
 
@@ -188,6 +191,14 @@
     .text {
         display: flex;
 
-        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+
+        gap: 5px;
+
+        .main {
+            font-weight: 600;
+        }
     }
 </style>

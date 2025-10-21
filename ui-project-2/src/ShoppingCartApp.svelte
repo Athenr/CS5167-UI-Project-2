@@ -8,8 +8,8 @@
 <main>
   <!-- <StoreMap /> -->
   <div class="main-application-background">
-    <!-- <LoginPage /> -->
-    <ShoppingPage />
+    <LoginPage />
+    <!-- <ShoppingPage /> -->
     <!-- <PaymentPage/> -->
   </div>
 </main>
