@@ -9,7 +9,7 @@
 
 <div class="container">
     <div class="import">
-        <div class="qr pane" on:click={goToShopping} style="cursor: pointer;">
+        <div class="qr pane" style="cursor: pointer;">
             <h1 class="no-margin">Scan</h1>
             <div class="qr-code" onclick={changePage}></div>
             <p class="instructions no-margin">
