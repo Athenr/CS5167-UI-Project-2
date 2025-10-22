@@ -3,7 +3,7 @@
     import PaymentPage from "./screens/PaymentPage.svelte";
   import ShoppingPage from "./screens/ShoppingPage.svelte";
 
-  let currentPage = $state(2)
+  let currentPage = $state(0)
 </script>
 
 <main>
