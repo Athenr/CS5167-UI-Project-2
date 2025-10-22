@@ -29,7 +29,7 @@
   <!-- <StoreMap /> -->
   <div class="main-application-background">
     {#if currentPage == 0}
-    <LoginPage />
+    <LoginPage on:gotoShopping={() => currentPage = 1} />
     {:else if currentPage == 1}
     <ShoppingPage {routeIndex} bind:cart />
     {:else if currentPage == 2}
