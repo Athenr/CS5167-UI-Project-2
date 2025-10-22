@@ -1,51 +1,51 @@
 <script>
     import { formatAsCurrency } from "../utils";
 
-    let { activePage = $bindable() } = $props();
+    let { activePage = $bindable(), cart } = $props();
     
 
     import Contactless from "../icons/contactless.svg?raw";
 
-    let items = $state([
-        {
-            id: 0,
-            name: "Bananas",
-            quantity: 10,
-            price: 0.49,
-            img: "https://i5.walmartimages.com/seo/Marketside-Fresh-Organic-Bananas-Bunch_f17ef225-0999-4035-9ed1-7a06607333b4.7c3b33492f937bcc19fe3339d5230929.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
-        },
-        {
-            id: 1,
-            name: "Tortillas",
-            quantity: 1,
-            price: 2.78,
-            img: "https://i5.walmartimages.com/seo/Mission-Super-Soft-Flour-Tortillas-Soft-Taco-Size-10-Count_059d072a-c60d-493e-9a5c-9175c2849cba.783f703a9193e81b7efe8980cb332508.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
-        },
-        {
-            id: 2,
-            name: "Dave's Killer Bread 21 Whole Grains and Seeds Organic Bread Loaf",
-            quantity: 1,
-            price: 12.45,
-            img: "https://i5.walmartimages.com/seo/Dave-s-Killer-Bread-21-Whole-Grains-and-Seeds-Organic-Bread-Loaf-27-oz-Pack-of-9_6c9b0609-3ce6-430a-880e-52d61186e31a.d289021d7c6c7545679f2a1498c52985.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
-        },
-    ]);
+    // let items = $state([
+    //     {
+    //         id: 0,
+    //         name: "Bananas",
+    //         quantity: 10,
+    //         price: 0.49,
+    //         img: "https://i5.walmartimages.com/seo/Marketside-Fresh-Organic-Bananas-Bunch_f17ef225-0999-4035-9ed1-7a06607333b4.7c3b33492f937bcc19fe3339d5230929.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
+    //     },
+    //     {
+    //         id: 1,
+    //         name: "Tortillas",
+    //         quantity: 1,
+    //         price: 2.78,
+    //         img: "https://i5.walmartimages.com/seo/Mission-Super-Soft-Flour-Tortillas-Soft-Taco-Size-10-Count_059d072a-c60d-493e-9a5c-9175c2849cba.783f703a9193e81b7efe8980cb332508.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
+    //     },
+    //     {
+    //         id: 2,
+    //         name: "Dave's Killer Bread 21 Whole Grains and Seeds Organic Bread Loaf",
+    //         quantity: 1,
+    //         price: 12.45,
+    //         img: "https://i5.walmartimages.com/seo/Dave-s-Killer-Bread-21-Whole-Grains-and-Seeds-Organic-Bread-Loaf-27-oz-Pack-of-9_6c9b0609-3ce6-430a-880e-52d61186e31a.d289021d7c6c7545679f2a1498c52985.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF",
+    //     },
+    // ]);
 
-    function removeItem(toRemoveID){
+    // function removeItem(toRemoveID){
         
-        items = items.filter(item => item.id !== toRemoveID);
+    //     items = items.filter(item => item.id !== toRemoveID);
         
-    }
+    // }
 
-    function addItem(name, quantity, price ){
-        const newItem = {
-            id: items.length,
-            name: name,
-            quantity: quantity,
-            price: price,
-            img: "N/A"
-        }
-        items.push(newItem);
-    }
+    // function addItem(name, quantity, price ){
+    //     const newItem = {
+    //         id: items.length,
+    //         name: name,
+    //         quantity: quantity,
+    //         price: price,
+    //         img: "N/A"
+    //     }
+    //     items.push(newItem);
+    // }
     let name = $state("Item Name");
     let quantity = $state(0);
     let price = $state(0);
@@ -58,10 +58,10 @@
             <p class="no-margin">Review your final receipt below.</p>
         </div>
         <div class="items">
-            {#each items as item}
+            {#each cart as item}
             
                 <div class="item">
-                    <button onclick={() => removeItem(item.id)}>X</button>
+                    <!-- <button onclick={() => removeItem(item.id)}>X</button> -->
                     <div class="quantity">{item.quantity}x</div>
                     <div class="name">{item.name}</div>
                     <div class="price number">
@@ -71,17 +71,17 @@
             {/each}
 
         </div>
-        <div>
+        <!-- <div>
                     <input bind:value={name} /><br>Number of Items <input bind:value={quantity}><br>Price Per Item <input type=number bind:value={price}>
                     <br>
             <button onclick={() => addItem(name,quantity,price)}>Add Item</button>
-        </div>
+        </div> -->
         <div class="total">
             <div>
                 <p class="total-label no-margin">Total:</p>
                 <p class="number no-margin">
                     {formatAsCurrency(
-                        items.reduce(
+                        cart.reduce(
                             (total, item) => total + item.quantity * item.price,
                             0,
                         ),
@@ -104,7 +104,7 @@
             <a href="#">I only have cash</a>
             <br>
             <br>
-            <button onclick={ () => {activePage = 0}}>Cancel Transaction</button>
+            <button class="primary" onclick={ () => {activePage = 0}}>Cancel Transaction</button>
         </div>
     </div>
 </div>

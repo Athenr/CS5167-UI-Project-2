@@ -41,7 +41,7 @@
     //     },
     // ];
 
-    let { routeIndex, cart = $bindable() } = $props();
+    let { routeIndex, cart = $bindable(), currentPage = $bindable() } = $props();
 
     let layoutCopy = $state(structuredClone(layout));
     let directions = $state({});
@@ -201,7 +201,7 @@
                 {/each}
             {/key}
         </div>
-        <button class="primary">Checkout now</button>
+        <button class="primary" onclick={() => currentPage = 2}>Checkout now</button>
     </div>
 </div>
 

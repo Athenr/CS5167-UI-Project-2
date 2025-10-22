@@ -1,8 +1,17 @@
+<script>
+    let { currentPage = $bindable() } = $props();
+
+    function changePage(e) {
+        e.preventDefault();
+        currentPage = 1;
+    }
+</script>
+
 <div class="container">
     <div class="import">
         <div class="qr pane">
             <h1 class="no-margin">Scan</h1>
-            <div class="qr-code"></div>
+            <div class="qr-code" onclick={changePage}></div>
             <p class="instructions no-margin">
                 Scan the code above with the Groceries app to import your
                 shopping list.
@@ -14,15 +23,25 @@
                 Login to your Groceries account to import your shopping list.
             </p>
             <form class="login-form" action="">
-                <input type="text" name="username" id="username" placeholder="Username" />
-                <input type="password" name="password" id="password" placeholder="Password" />
-                <button class="primary">Login</button>
-                <a href="#" class="forgot-password">Forgot password</a>
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                />
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                />
+                <button class="primary" onclick={changePage}>Login</button>
+                <a href="#" class="forgot-password" onclick={changePage}>Forgot password</a>
             </form>
         </div>
     </div>
     <div class="skip-import">
-        <a href="#">No thanks, I just want to start shopping</a>
+        <a href="#" onclick={changePage}>No thanks, I just want to start shopping</a>
     </div>
 </div>
 
