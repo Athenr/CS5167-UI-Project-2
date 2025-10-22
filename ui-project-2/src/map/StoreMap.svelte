@@ -1,17 +1,15 @@
 <script>
     import { onMount } from "svelte";
-    import { layout } from "./layout";
     import ShelfTile from "./ShelfTile.svelte";
+    import LocationDot from "./LocationDot.svelte";
 
-    import Straight from "../icons/straight.svg?raw";
-    import TurnRight from "../icons/turn_right.svg?raw";
+    let { route = $bindable(), layout, directions, ...rest } = $props();
 
     const width = layout[0].length * 150;
     const height = layout.length * 100;
 
-    let { route = $bindable(), ...rest } = $props();
-
     let container;
+    let circle;
 
     onMount(() => {
         if (container) {
@@ -48,15 +46,13 @@
 <div {...rest} class={["container", { ...rest.class }]} bind:this={container}>
     <div class="directions">
         <div class="icon">
-            <!-- {@html Straight} -->
-            <img
-                src="https://i5.walmartimages.com/seo/Marketside-Fresh-Organic-Bananas-Bunch_f17ef225-0999-4035-9ed1-7a06607333b4.7c3b33492f937bcc19fe3339d5230929.jpeg?odnHeight=48&odnWidth=48&odnBg=FFFFFF"
-                alt="Bananas"
-            />
+            <img src={directions.icon} alt={directions.title} />
         </div>
         <div class="text">
-            <div class="main">Grab 10 bananas</div>
-            <p class="no-margin">From the top shelf on the left</p>
+            <div class="main">{directions.title}</div>
+            {#if directions.subtitle}
+                <p class="no-margin">{directions.subtitle}</p>
+            {/if}
         </div>
     </div>
     <!-- TODO: Yes I know this is probably better done as an SVG. 
@@ -122,7 +118,7 @@
                             {/if}
                             {#if tile.active?.location}
                                 <!-- Location -->
-                                <circle cx="75" cy="50" r="15" fill="#6585CE" />
+                                <LocationDot />
                             {/if}
                         </g>
                         <defs>

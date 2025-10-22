@@ -8,7 +8,7 @@ export const layout = [
                 1,
                 2
             ],
-            "selected": 2
+            "selected": 0
         },
         {
             "type": "path",
@@ -17,7 +17,9 @@ export const layout = [
             "active": {
                 "east": true,
                 "south": true
-            }
+            },
+            "next": 2,
+            "previous": 13
         },
         {
             "type": "path",
@@ -26,7 +28,9 @@ export const layout = [
             "active": {
                 "east": true,
                 "west": true
-            }
+            },
+            "next": 3,
+            "previous": 1
         },
         {
             "type": "path",
@@ -35,7 +39,9 @@ export const layout = [
             "active": {
                 "east": true,
                 "west": true
-            }
+            },
+            "next": 4,
+            "previous": 2
         },
         {
             "type": "path",
@@ -44,7 +50,9 @@ export const layout = [
             "active": {
                 "south": true,
                 "west": true
-            }
+            },
+            "next": 16,
+            "previous": 3
         },
         {
             "type": "path",
@@ -63,7 +71,9 @@ export const layout = [
             "active": {
                 "south": true,
                 "east": true
-            }
+            },
+            "previous": 19,
+            "next": 8
         },
         {
             "type": "path",
@@ -72,7 +82,9 @@ export const layout = [
             "active": {
                 "east": true,
                 "west": true
-            }
+            },
+            "previous": 7,
+            "next": 9
         },
         {
             "type": "path",
@@ -81,7 +93,9 @@ export const layout = [
             "active": {
                 "east": true,
                 "west": true
-            }
+            },
+            "previous": 8,
+            "next": 10
         },
         {
             "type": "path",
@@ -90,7 +104,9 @@ export const layout = [
             "active": {
                 "south": true,
                 "west": true
-            }
+            },
+            "previous": 9,
+            "next": 22
         },
         {
             "type": "shelf",
@@ -100,8 +116,7 @@ export const layout = [
                 4,
                 5
             ],
-            "reversed": true,
-            "selected": 2
+            "reversed": true
         }
     ],
     [
@@ -121,7 +136,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 1,
+            "previous": 25
         },
         {
             "type": "shelf",
@@ -149,7 +166,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 28,
+            "previous": 4
         },
         {
             "type": "shelf",
@@ -177,7 +196,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 31,
+            "next": 7
         },
         {
             "type": "shelf",
@@ -205,7 +226,9 @@ export const layout = [
             "active": {
                 "south": true,
                 "north": true
-            }
+            },
+            "previous": 10,
+            "next": 34
         },
         {
             "type": "shelf",
@@ -235,7 +258,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 13,
+            "previous": 37
         },
         {
             "type": "shelf",
@@ -263,7 +288,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 40,
+            "previous": 16
         },
         {
             "type": "shelf",
@@ -291,7 +318,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 43,
+            "next": 19
         },
         {
             "type": "shelf",
@@ -319,7 +348,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 22,
+            "next": 46
         },
         {
             "type": "shelf",
@@ -349,7 +380,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 25,
+            "previous": 49
         },
         {
             "type": "shelf",
@@ -377,7 +410,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 52,
+            "previous": 28
         },
         {
             "type": "shelf",
@@ -405,7 +440,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 55,
+            "next": 31
         },
         {
             "type": "shelf",
@@ -433,7 +470,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 34,
+            "next": 58
         },
         {
             "type": "shelf",
@@ -463,7 +502,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 37,
+            "previous": 61
         },
         {
             "type": "shelf",
@@ -482,7 +523,8 @@ export const layout = [
                 85,
                 86
             ],
-            "reversed": true
+            "reversed": true,
+            "selected": 1
         },
         {
             "type": "path",
@@ -491,7 +533,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 64,
+            "previous": 40
         },
         {
             "type": "shelf",
@@ -519,7 +563,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 67,
+            "next": 43
         },
         {
             "type": "shelf",
@@ -547,7 +593,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 46,
+            "next": 70
         },
         {
             "type": "shelf",
@@ -577,7 +625,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 49,
+            "previous": 73
         },
         {
             "type": "shelf",
@@ -605,7 +655,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 76,
+            "previous": 52
         },
         {
             "type": "shelf",
@@ -633,7 +685,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 79,
+            "next": 55
         },
         {
             "type": "shelf",
@@ -661,7 +715,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 58,
+            "next": 82
         },
         {
             "type": "shelf",
@@ -671,7 +727,8 @@ export const layout = [
                 124,
                 125
             ],
-            "reversed": true
+            "reversed": true,
+            "selected": 2
         }
     ],
     [
@@ -691,7 +748,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 61,
+            "previous": 85
         },
         {
             "type": "shelf",
@@ -719,7 +778,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 88,
+            "previous": 64
         },
         {
             "type": "shelf",
@@ -747,7 +808,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 91,
+            "next": 67
         },
         {
             "type": "shelf",
@@ -775,7 +838,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 70,
+            "next": 94
         },
         {
             "type": "shelf",
@@ -805,7 +870,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 73,
+            "previous": 97
         },
         {
             "type": "shelf",
@@ -833,7 +900,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 100,
+            "previous": 76
         },
         {
             "type": "shelf",
@@ -861,7 +930,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 103,
+            "next": 79
         },
         {
             "type": "shelf",
@@ -889,7 +960,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 82,
+            "next": 106
         },
         {
             "type": "shelf",
@@ -919,7 +992,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 85,
+            "previous": 109
         },
         {
             "type": "shelf",
@@ -947,7 +1022,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 112,
+            "previous": 88
         },
         {
             "type": "shelf",
@@ -975,7 +1052,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 115,
+            "next": 91
         },
         {
             "type": "shelf",
@@ -1003,7 +1082,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 94,
+            "next": 118
         },
         {
             "type": "shelf",
@@ -1033,7 +1114,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 97,
+            "previous": 121
         },
         {
             "type": "shelf",
@@ -1061,7 +1144,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "next": 124,
+            "previous": 100
         },
         {
             "type": "shelf",
@@ -1089,7 +1174,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 127,
+            "next": 103
         },
         {
             "type": "shelf",
@@ -1117,7 +1204,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 106,
+            "next": 130
         },
         {
             "type": "shelf",
@@ -1147,7 +1236,8 @@ export const layout = [
             "active": {
                 "north": true,
                 "location": true
-            }
+            },
+            "next": 109
         },
         {
             "type": "path",
@@ -1166,7 +1256,9 @@ export const layout = [
             "active": {
                 "north": true,
                 "east": true
-            }
+            },
+            "next": 125,
+            "previous": 112
         },
         {
             "type": "path",
@@ -1175,7 +1267,9 @@ export const layout = [
             "active": {
                 "east": true,
                 "west": true
-            }
+            },
+            "previous": 124,
+            "next": 126
         },
         {
             "type": "path",
@@ -1184,7 +1278,9 @@ export const layout = [
             "active": {
                 "east": true,
                 "west": true
-            }
+            },
+            "previous": 125,
+            "next": 127
         },
         {
             "type": "path",
@@ -1193,7 +1289,9 @@ export const layout = [
             "active": {
                 "west": true,
                 "north": true
-            }
+            },
+            "previous": 126,
+            "next": 115
         },
         {
             "type": "path",
@@ -1212,7 +1310,8 @@ export const layout = [
             "active": {
                 "north": true,
                 "south": true
-            }
+            },
+            "previous": 118
         },
         {
             "type": "shelf",
