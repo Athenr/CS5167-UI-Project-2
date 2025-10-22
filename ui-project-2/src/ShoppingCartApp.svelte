@@ -9,7 +9,7 @@
 <main>
   <div class="main-application-background">
     {#if currentPage == 0}
-    <LoginPage />
+    <LoginPage on:gotoShopping={() => currentPage = 1} />
     {:else if currentPage == 1}
     <ShoppingPage />
     {:else if currentPage == 2}
