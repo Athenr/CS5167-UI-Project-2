@@ -31,7 +31,7 @@
     {#if currentPage == 0}
     <LoginPage on:gotoShopping={() => currentPage = 1} />
     {:else if currentPage == 1}
-    <ShoppingPage {routeIndex} bind:cart />
+    <ShoppingPage routeIndex={routeIndex} on:gotoPayment={() => currentPage = 2} />
     {:else if currentPage == 2}
      <PaymentPage bind:activePage={currentPage}/>
      {:else}

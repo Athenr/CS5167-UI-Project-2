@@ -1,4 +1,5 @@
 <script>
+    import { createEventDispatcher } from "svelte";
     import StoreMap from "../map/StoreMap.svelte";
 
     import Straight from "../icons/straight.svg";
@@ -6,6 +7,8 @@
     import TurnLeft from "../icons/turn_left.svg";
 
     import { layout } from "../map/layout";
+
+    const dispatch = createEventDispatcher();
 
     const items = $state([
         {
@@ -138,7 +141,12 @@
         }
 
         previousIndex = routeIndex;
+
     });
+
+    function checkoutNow() {
+        dispatch("gotoPayment");
+    }
 
     // const route = $derived.by(() => {
     //     const start = 121;
@@ -201,7 +209,7 @@
                 {/each}
             {/key}
         </div>
-        <button class="primary">Checkout now</button>
+        <button class="primary" onclick={checkoutNow}>Checkout now</button>
     </div>
 </div>
 
