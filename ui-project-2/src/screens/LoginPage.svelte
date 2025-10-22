@@ -1,33 +1,17 @@
 <script>
-    import { createEventDispatcher } from "svelte";
-    const dispatch = createEventDispatcher();
+    let { currentPage = $bindable() } = $props();
 
-    let username = "";
-    let password = "";
-
-    function goToShopping() {
-        dispatch("gotoShopping");
-    }
-
-    function handleLogin(event) {
-        event.preventDefault();
-        if (username.trim() && password.trim()) {
-            goToShopping();
-        }
-    }
-
-    function forgotPassword(event) {
-        event.preventDefault();
-        alert("You should've remembered your password.");
+    function changePage(e) {
+        e.preventDefault();
+        currentPage = 1;
     }
 </script>
-
 
 <div class="container">
     <div class="import">
         <div class="qr pane" on:click={goToShopping} style="cursor: pointer;">
             <h1 class="no-margin">Scan</h1>
-            <div class="qr-code"></div>
+            <div class="qr-code" onclick={changePage}></div>
             <p class="instructions no-margin">
                 Scan the code above with the Groceries app to import your
                 shopping list.
@@ -38,16 +22,26 @@
             <p class="instructions no-margin">
                 Login to your Groceries account to import your shopping list.
             </p>
-            <form class="login-form" on:submit={handleLogin}>
-                <input type="text" name="username" id="username" placeholder="Username" bind:value={username} required />
-                <input type="password" name="password" id="password" placeholder="Password" bind:value={password} required />
-                <button class="primary">Login</button>
-                <a href="#" class="forgot-password" on:click={forgotPassword}>Forgot password</a>
+            <form class="login-form" action="">
+                <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Username"
+                />
+                <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password"
+                />
+                <button class="primary" onclick={changePage}>Login</button>
+                <a href="#" class="forgot-password" onclick={changePage}>Forgot password</a>
             </form>
         </div>
     </div>
     <div class="skip-import">
-        <a href="#" on:click|preventDefault={goToShopping}>No thanks, I just want to start shopping</a>
+        <a href="#" onclick={changePage}>No thanks, I just want to start shopping</a>
     </div>
 </div>
 
