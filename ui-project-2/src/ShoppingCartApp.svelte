@@ -21,14 +21,22 @@
       routeIndex--;
     }
   }
+
+  let currentPage = $state(0)
 </script>
 
 <main>
   <!-- <StoreMap /> -->
   <div class="main-application-background">
-    <!-- <LoginPage /> -->
+    {#if currentPage == 0}
+    <LoginPage />
+    {:else if currentPage == 1}
     <ShoppingPage {routeIndex} bind:cart />
-    <!-- <PaymentPage/> -->
+    {:else if currentPage == 2}
+     <PaymentPage bind:activePage={currentPage}/>
+     {:else}
+     <LoginPage />
+     {/if} 
   </div>
   <button class="primary" onclick={next}>Next Step</button>
   <!-- TODO: The previous functionality on the map is not working right so I have disabled this button -->

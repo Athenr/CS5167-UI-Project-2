@@ -1,6 +1,9 @@
 <script>
     import { formatAsCurrency } from "../utils";
 
+    let { activePage = $bindable() } = $props();
+    
+
     import Contactless from "../icons/contactless.svg?raw";
 
     let items = $state([
@@ -99,6 +102,9 @@
         </div>
         <div class="cash">
             <a href="#">I only have cash</a>
+            <br>
+            <br>
+            <button onclick={ () => {activePage = 0}}>Cancel Transaction</button>
         </div>
     </div>
 </div>
